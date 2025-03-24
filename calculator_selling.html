@@ -111,11 +111,11 @@
                 const weight = i * 0.5;
                 
                 if (i <= 21) {
-                    // 10.5kg 이하: 4610원 시작, 평균 약 670원씩 증가
-                    shippingCosts[weight] = 4610 + (i - 1) * 670;
+                    // 10.5kg 이하: 3610원 시작, 평균 약 670원씩 증가
+                    shippingCosts[weight] = 3610 + (i - 1) * 670;
                 } else {
                     // 11kg 이상: 540원씩 증가
-                    shippingCosts[weight] = 17990 + (i - 21) * 540;
+                    shippingCosts[weight] = 16990 + (i - 21) * 540;
                 }
             }
 
@@ -215,12 +215,6 @@
             <form>
                 <label for="exchange_rate">환율:</label>
                 <select id="exchange_rate" onchange="calculateProfit()">
-                    <option value="170">170</option>
-                    <option value="175">175</option>
-                    <option value="180">180</option>
-                    <option value="185">185</option>
-                    <option value="190">190</option>
-                    <option value="195">195</option>
                     <option value="200">200</option>
                     <option value="205">205</option>
                     <option value="210">210</option>
