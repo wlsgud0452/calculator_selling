@@ -82,10 +82,9 @@
                 return;
             }
 
-            let expectedPrice = localPrice * 192 + localPrice * 192 * 0.05;
+            let expectedPrice = localPrice * 210 + localPrice * 210 * 0.05;
             expectedPrice = Math.ceil(expectedPrice / 500) * 500;
             const profit = Math.ceil(competitorPrice - expectedPrice); // 올림 처리
-
             document.getElementById('expected_price').textContent = formatNumber(expectedPrice) + " 원";
             document.getElementById('profit').textContent = formatNumber(profit) + " 원";
         }
